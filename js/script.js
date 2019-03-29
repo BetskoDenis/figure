@@ -2,9 +2,9 @@ var h,
     d,
     res,
     w,
-x,
-y,
-z;
+    x,
+    y,
+    z;
 function rectangle() {
     if (document.getElementById('check').checked) {
         //console.log('sdsd');
@@ -76,14 +76,29 @@ function magic() {
         document.getElementById('diam').value = '';
         document.getElementById('height').value = '';
         document.getElementById('width').value = '';
-
        x = document.getElementById('leg1').value;
        y = document.getElementById('leg2').value;
        z = document.getElementById('hypot').value;
-
-        document.getElementById('one').style.height = res + 'px';
-        document.getElementById('one').style.width = res + 'px';
-        document.getElementById('one').style.borderRadius = '50%';
+        document.getElementById('one').style.borderTopWidth = 0;
+        document.getElementById('one').style.borderRightWidth = x + 'px';
+        document.getElementById('one').style.borderBottomWidth = y + 'px';
+        document.getElementById('one').style.borderLeftWidth = z + 'px';
+        document.getElementById('one').style.borderTopColor = 'transparent';
+        document.getElementById('one').style.borderRightColor = 'transparent';
+        document.getElementById('one').style.borderBottomColor = 'rgba(0, 0, 255, 1)';
+        document.getElementById('one').style.borderLeftColor = 'transparent';
         document.getElementById('one').style.display = 'block';
     } else {alert('Бро, сделай свой выбор')}
+}
+function cancel(){
+    document.getElementById('one').style = '';
+    document.getElementById('diam').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('width').value = '';
+    document.getElementById('leg1').value = '';
+    document.getElementById('leg2').value = '';
+    document.getElementById('hypot').value = '';
+    document.getElementById('check').checked = false;
+    document.getElementById('check2').checked = false;
+    document.getElementById('check3').checked = false;
 }
