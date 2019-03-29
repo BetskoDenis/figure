@@ -1,5 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+
+}
 .one{
-    border: 2px solid   rgba(0, 0, 0, 1);
-    width: 0px;
-    height: 0px;
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 1);
+    width: 0;
+    height: 0;
+    border-width: 0 150px 200px 500px;
+    border-color: transparent transparent #007bff transparent;
+    /*border-top: 25px solid rgb(97, 236, 130);*/
+    /*border-bottom: 25px solid rgb(114, 147, 168);*/
+    /*border-right: 25px solid aqua;*/
+    /*border-left: 25px solid green;*/
+    /*width: 0;*/
+    /*height: 0;*/
+}
+
+.menu{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 1);
+    height: 100px;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.check_wrapper{
+    display: flex;
+}
+
+.check{
+    margin: 10px 10px 30px 10px;
+}
+
+.input_wrapper{
+    display: flex;
+}
+
+.input{
+    text-align: center;
+    display: none;
+    max-width: 200px;
+    font-size: 25px;
+    }
+.input:not(:last-child){
+    margin-right: 15px;
+}
+.button{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
