@@ -85,7 +85,7 @@ function magic() {
         document.getElementById('one').style.borderLeftWidth = z + 'px';
         document.getElementById('one').style.borderTopColor = 'transparent';
         document.getElementById('one').style.borderRightColor = 'transparent';
-        document.getElementById('one').style.borderBottomColor = 'rgba(0, 0, 255, 1)';
+        document.getElementById('one').style.borderBottomColor = 'rgba(0, 0, 0, 1)';
         document.getElementById('one').style.borderLeftColor = 'transparent';
         document.getElementById('one').style.display = 'block';
     } else {alert('Бро, сделай свой выбор')}
